@@ -23,7 +23,6 @@ class WechatJump(object):
         # 把截图存到内存
         img_fb = BytesIO()
         img_fb.write(screenshot)
-
         return numpy.array(Image.open(img_fb))
 
     # 跳到下一块
